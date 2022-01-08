@@ -146,8 +146,9 @@
   font-size: 50px;
   font-weight: 400px;
   color: #ffffff;
-  text-align: center;
-  padding: 36px;
+  text-align: left;
+  /* padding: 36px; */
+  padding: 36px 0;
 }
 
 .page-supersub-overlay {
@@ -210,6 +211,20 @@ width: 100%;
   .top-para{
     font-size: 1rem;
     padding: 1.25rem 0.9375rem 1.25rem 1.25rem;
+  }
+
+}
+.img-proc-feature{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width:992px) {
+  .img-proc-feature{
+    display: block;
+  }
+  .img-proc-span{
+    display: block;
   }
 
 }
