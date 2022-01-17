@@ -676,8 +676,24 @@ canvas {
 .features .v-tabs .v-tab-head a.active {
   color: #1D58A8;
 }
+.features .v-tabs .v-tab-head a.active1{
+  color: #1D58A8;
+}
 
 .features .v-tabs .v-tab-head a.active::after, .features .v-tabs .v-tab-head a.active::before {
+  content: "";
+  border-style: solid;
+  border-width: 15px;
+  position: absolute;
+  right: 0;
+  top: 15px;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+}
+.features .v-tabs .v-tab-head a.active1::after, .features .v-tabs .v-tab-head a.active1::before {
   content: "";
   border-style: solid;
   border-width: 15px;
@@ -703,7 +719,14 @@ canvas {
   margin-right: -1px;
   border-color: #faf8f5 transparent transparent;
 }
+.features .v-tabs .v-tab-head a.active1::before {
+  border-color: #1D58A8 transparent transparent;
+}
 
+.features .v-tabs .v-tab-head a.active1::after {
+  margin-right: -1px;
+  border-color: #faf8f5 transparent transparent;
+}
 .features .v-tabs a.v-tab-head {
   border: none;
   padding: 15px 0;
@@ -722,6 +745,10 @@ canvas {
 }
 
 .features .v-tabs a.v-tab-head.active::after {
+  color: #1D58A8;
+  content: "\f078";
+}
+.features .v-tabs a.v-tab-head.active1::after {
   color: #1D58A8;
   content: "\f078";
 }

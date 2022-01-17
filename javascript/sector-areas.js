@@ -124,11 +124,14 @@ $('.v-tab-link').click(function() {
 
 
 
+
 var tabPanelToShow = function(elem) {
 
   $('.v-tab-link').removeClass('active').parent().find(elem).addClass('active');
+
 };
 
 var tabLinkToActivate = function(elem) {
   $('.v-tab-pane').children('div').removeClass('show').parent().find(elem).addClass('show');
+
 };
